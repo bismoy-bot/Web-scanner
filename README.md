@@ -30,6 +30,7 @@ git clone https://github.com/yourusername/web-scanner.git
 Usage
 
 cd web-scanner
+chmod +x scanner.sh
 bash scanner.sh
 
 
