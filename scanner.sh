@@ -1,5 +1,5 @@
 #!/bin/bash
-
+clear
 purple="\033[95m"
 blue="\033[94m"
 green="\033[92m"
