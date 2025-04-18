@@ -26,12 +26,12 @@ A Python-based web scanner designed to analyze and audit websites for informatio
 
 ```bash
 git clone https://github.com/yourusername/web-scanner.git
-cd web-scanner
-pip install -r requirements.txt
 
 Usage
 
-python scanner.py https://example.com
+cd web-scanner
+bash scanner.sh
+
 
 Documentation
 
