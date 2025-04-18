@@ -25,7 +25,7 @@ A Python-based web scanner designed to analyze and audit websites for informatio
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/web-scanner.git
+git clone https://github.com/bismoy-bot/web-scanner.git
 
 Usage
 
