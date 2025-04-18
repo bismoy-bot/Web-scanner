@@ -38,7 +38,7 @@ if [[ "$doc_choice" =~ ^[Yy]$ ]]; then
     xdg-open "$DOC_URL" 2>/dev/null || termux-open-url "$DOC_URL"
 fi
 
-echo "Have you installed all the required Python packages from requirements.txt? (Y/N)"
+echo "Have you installed all the required Python packages ? (Y/N)"
 read req_choice
 
 if [[ "$req_choice" =~ ^[Nn]$ ]]; then
