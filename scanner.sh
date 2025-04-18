@@ -1,13 +1,22 @@
 #!/bin/bash
 
+purple="\033[95m"
+blue="\033[94m"
+green="\033[92m"
+reset="\033[0m"
 
-\033[95m" + r"""
+# Print the colored ASCII art
+echo -e "${purple}"
+cat << "EOF"
  __        __   _     _ _       _
  \ \      / /__| |__ (_) |_ ___| |__   ___ ___
   \ \ /\ / / _ \ '_ \| | __/ __| '_ \ / _ / __|
    \ V  V /  __/ |_) | | || (__| | | |  __\__ \
     \_/\_/ \___|_.__/|_|\__\___|_| |_|\___|___/
-""" + "\033[94m" + r"""
+EOF
+
+echo -e "${blue}"
+cat << "EOF"
 __          __ _             _
 \ \        / / |           (_)
  \ \  /\  / /| | ___   __ _ _ _ __   __ _
@@ -16,9 +25,9 @@ __          __ _             _
     \/  \/   |_|\___/ \__, |_|_| |_|\__, |
                       __/ |         __/ |
                      |___/         |___/
-""" + "\033[92m" + "\n        CREATED BY BISMOY GHOSH\n" + "\033[0m")
+EOF
 
-
+echo -e "${green}        CREATED BY BISMOY GHOSH${reset}"
 # Your Blogspot documentation URL
 DOC_URL="https://infoverseb.blogspot.com/2025/04/python-web-scannereasy-to-use.html?m=1"
 
