@@ -20,7 +20,3 @@ fi
 
 echo "Running scanner..."
 python scanner.py
-
-mv /data/data/com.termux/files/home/Downloads/report_facebook.html
-
-xdg-open "/data/data/com.termux/files/home/Downloads/report_facebook.html"
