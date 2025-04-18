@@ -6,6 +6,8 @@ import os
 import tldextract
 from urllib.parse import urlparse
 from datetime import datetime
+import shutil
+import webbrowser
 
 def banner():
     print("\033[95m" + r"""
@@ -197,3 +199,13 @@ if __name__ == "__main__":
     target_url = input("Enter the URL to analyze: ")
     get_link_info(target_url)
   
+
+filename = f"report_{domain_name}.html"
+
+# Move to Downloads
+src_path = os.path.abspath(filename)
+downloads_path = os.path.join(os.path.expanduser("~"), "Downloads", filename)
+shutil.move(src_path, downloads_path)
+
+# Open in default browser
+webbrowser.open(f"file://{downloads_path}")
