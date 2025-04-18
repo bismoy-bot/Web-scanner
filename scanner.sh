@@ -1,5 +1,24 @@
 #!/bin/bash
 
+
+\033[95m" + r"""
+ __        __   _     _ _       _
+ \ \      / /__| |__ (_) |_ ___| |__   ___ ___
+  \ \ /\ / / _ \ '_ \| | __/ __| '_ \ / _ / __|
+   \ V  V /  __/ |_) | | || (__| | | |  __\__ \
+    \_/\_/ \___|_.__/|_|\__\___|_| |_|\___|___/
+""" + "\033[94m" + r"""
+__          __ _             _
+\ \        / / |           (_)
+ \ \  /\  / /| | ___   __ _ _ _ __   __ _
+  \ \/  \/ / | |/ _ \ / _` | | '_ \ / _` |
+   \  /\  /  | | (_) | (_| | | | | | (_| |
+    \/  \/   |_|\___/ \__, |_|_| |_|\__, |
+                      __/ |         __/ |
+                     |___/         |___/
+""" + "\033[92m" + "\n        CREATED BY BISMOY GHOSH\n" + "\033[0m")
+
+
 # Your Blogspot documentation URL
 DOC_URL="https://infoverseb.blogspot.com/2025/04/python-web-scannereasy-to-use.html?m=1"
 
@@ -19,4 +38,5 @@ if [[ "$req_choice" =~ ^[Nn]$ ]]; then
 fi
 
 echo "Running scanner..."
+clear
 python scanner.py
