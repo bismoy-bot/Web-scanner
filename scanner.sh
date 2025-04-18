@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Your Blogspot documentation URL
-DOC_URL="https://yourblogspotname.blogspot.com/p/web-scanner-docs.html"
+DOC_URL="https://infoverseb.blogspot.com/2025/04/python-web-scannereasy-to-use.html?m=1"
 
 echo "Do you want to visit the documentation before using the scanner? (Y/N)"
 read doc_choice
