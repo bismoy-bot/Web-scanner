@@ -196,7 +196,7 @@ def get_link_info(url):
 
 if __name__ == "__main__":
     banner()
-    target_url = input("Enter the URL to analyze: ")
+    target_url = input("Enter the URL to analyze:(with https://) ")
     get_link_info(target_url)
   
 
