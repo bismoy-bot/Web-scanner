@@ -51,8 +51,8 @@ clear
 python scanner.py
 sleep 1
 cd Report 
-python -m http.server 8080
-sleep 1
+python -m http.server 8080 &
+sleep 1 &
 
 # Open mobile browser
 
