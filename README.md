@@ -50,6 +50,11 @@ chmod +x scanner.sh
 bash scanner.sh
 ```
 
+Then it will automatically open your browser. Navigate to Report folder and find your report .
+
+
+VERY SIMPLE VERY EASY.
+
 Documentation
 
 Full usage and feature documentation is available on my Blogspot:
