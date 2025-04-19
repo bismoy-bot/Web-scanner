@@ -31,21 +31,21 @@ echo -e "${green}        CREATED BY BISMOY GHOSH${reset}"
 # Your Blogspot documentation URL
 DOC_URL="https://infoverseb.blogspot.com/2025/04/python-web-scannereasy-to-use.html?m=1"
 
-echo "${purple}Do you want to visit the documentation before using the scanner? (Y/N)${reset}"
+echo -e "${purple}Do you want to visit the documentation before using the scanner? (Y/N)${reset}"
 read doc_choice
 
 if [[ "$doc_choice" =~ ^[Yy]$ ]]; then
     xdg-open "$DOC_URL" 2>/dev/null || termux-open-url "$DOC_URL"
 fi
 
-echo "${purple}Have you installed all the required Python packages ? (Y/N)${reset}"
+echo -e "${purple}Have you installed all the required Python packages ? (Y/N)${reset}"
 read req_choice
 
 if [[ "$req_choice" =~ ^[Nn]$ ]]; then
-    echo "${green}Installing requirements...${reset}"
+    echo -e "${green}Installing requirements...${reset}"
     pip install -r requirements.txt
 fi
 
-echo "${green}Running scanner...${reset}"
+echo -e "${green}Running scanner...${reset}"
 clear
 python scanner.py
