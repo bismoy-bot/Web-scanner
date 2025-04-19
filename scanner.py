@@ -57,10 +57,20 @@ def unmask_url(url):
         return url
 
 def generate_html_report(info):
-    downloads = os.path.join(os.path.expanduser("~"), "Downloads")
-    domain_name = tldextract.extract(info['original_url']).domain
-    html_path = os.path.join(downloads, f"report_{domain_name}.html")
+    report_dir = os.path.join(os.getcwd(), "Web-scanner", "Report")
+    os.makedirs(report_dir, exist_ok=True)
 
+    domain_name = tldextract.extract(info['original_url']).domain
+    html_path = os.path.join(report_dir, f"report_{domain_name}.html")
+
+    html = f"""<!DOCTYPE html>
+    <!-- [HTML content remains unchanged] -->
+    </html>"""
+
+    with open(html_path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"\n[+] Report saved as: {html_path}")
+    
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
