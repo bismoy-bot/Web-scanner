@@ -206,6 +206,6 @@ def get_link_info(url):
 
 if __name__ == "__main__":
     banner()
-    target_url = input("Enter the URL to analyze:(with https://) ")
+    target_url = input("\033[95m" + r"""Enter the URL to analyze:(with https://) """ + "\033[94m")
     get_link_info(target_url)
   
