@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .welcome-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: fadeInUp 1.5s ease forwards;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      animation: fadeInUp 2s ease forwards;
+    }
+
+    .creator {
+      font-size: 0.9em;
+      color: #ccc;
+      margin-top: 40px;
+      animation: fadeInUp 2.5s ease forwards;
+    }
+
+    a {
+      text-decoration: none;
+      background: #ffffff;
+      color: #2575fc;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s ease;
+      animation: fadeInUp 2s ease forwards;
+    }
+
+    a:hover {
+      background: #e0e0e0;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-box">
+    <h1>Welcome to My Website</h1>
+    <p>Hello, dear visitor! Enjoy your stay and explore freely.</p>
+    <a href="#">Get Started</a>
+    <div class="creator">Created by Bismoy Ghosh</div>
+  </div>
+</body>
+</html>
