@@ -57,7 +57,7 @@ def unmask_url(url):
         return url
 
 def generate_html_report(info):
-    report_dir = os.path.join(os.getcwd(), "Web-scanner", "Report")
+    report_dir = os.path.join(os.getcwd(), "Report")
     os.makedirs(report_dir, exist_ok=True)
 
     domain_name = tldextract.extract(info['original_url']).domain
