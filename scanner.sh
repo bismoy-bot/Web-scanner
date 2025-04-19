@@ -52,7 +52,7 @@ python scanner.py
 sleep 1
 cd Report 
 python -m http.server 8080 &
-sleep 1 &
+sleep 1
 
 # Open mobile browser
 
@@ -60,3 +60,7 @@ echo -e"${green}[+] Wait it will redirect to your browser...${reset}"
 echo -e "${green}[+] Opening browser at http://0.0.0.0:8000${reset}"
 echo -e "${green}[+] Or Open browser at http://0.0.0.0:8000${reset}"
 xdg-open http://0.0.0.0:8000
+
+echo -e "${green}Press Enter to stop all Python HTTP servers...${reset}"
+read
+pkill -f "http.server"
