@@ -49,7 +49,10 @@ chmod +x scanner.sh
 ```bash
 bash scanner.sh
 ```
-
+For windows then use like a linux 
+```bash
+wsl --install
+```
 Then it will automatically open your browser. Navigate to Report folder and find your report .
 
 
