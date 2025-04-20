@@ -31,6 +31,13 @@ apt update && apt upgrade
 ```bash
 apt install python wget git
 ```
+##For MAC
+```brew
+brew update && brew upgrade
+```
+```brew
+brew install python wget git
+```
 
 ```bash
 git clone https://github.com/bismoy-bot/web-scanner.git
