@@ -67,3 +67,7 @@ License
 This project is licensed under the MIT License.
 
 ---
+Want Easy Alias??
+You mind will be BOOM! 💥🤯 
+🔗 Visit
+https://infoverseb.blogspot.com/2025/04/easy-alias.html?m=1
